@@ -21,9 +21,9 @@ Marlen Fischer[^1], Juliane Röder, Johannes Signer, Daniel Tschink, Tanja Weibu
 ## 2. Basics in Research Data Management
 
 After completing this chapter, you will be able to...
-...explain the relevance of research data management for biodiversity data
-...name the four FAIR principles
-...contextualise how biodiversity research may raise ethical concerns related to indigenous data
+- ...explain the relevance of research data management for biodiversity data
+- ...name the four FAIR principles
+- ...contextualise how biodiversity research may raise ethical concerns related to indigenous data
 
 ### 2.1. Relevance of research data management: FAIR and CARE
 
