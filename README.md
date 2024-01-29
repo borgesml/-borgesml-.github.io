@@ -29,9 +29,11 @@ After completing this chapter, you will be able to...
 
 Description:
 
-```
-Collecting biodiversity data takes a lot of energy and resources. This makes biodiversity data not only valuable for the scientist who collected it, but also to support further research and to inform policy on conservation, natural resources, land use, agriculture and more[^2]
-```
+<div class="content-box">
+    <!-- Collecting biodiversity data takes a lot of energy and resources. This makes biodiversity data not only valuable for the scientist who collected it, but also to support further research and to inform policy on conservation, natural resources, land use, agriculture and more[^2] -->
+</div>
+
+
 
 Additionally, you may choose to set the following optional variables:
 
