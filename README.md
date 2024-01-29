@@ -5,4 +5,4 @@ title: "About me"
 ## About me
 
 I am X, Y and Z .
-theme:jekyll-theme-architect
+#theme:jekyll-theme-architect
