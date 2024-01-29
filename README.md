@@ -16,21 +16,21 @@ Marlen Fischer[^1], Juliane Röder, Johannes Signer, Daniel Tschink, Tanja Weibu
 #Bavarian Natural History Collections, Menzinger Str. 67, 80638, Munich, Germany
 
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
     ```
 
-## Customizing
+## 2. Basics in Research Data Management
 
-### Configuration variables
+After completing this chapter, you will be able to...
+...explain the relevance of research data management for biodiversity data
+...name the four FAIR principles
+...contextualise how biodiversity research may raise ethical concerns related to indigenous data
 
-Architect will respect the following variables, if set in your site's `_config.yml`:
+### 2.1. Relevance of research data management: FAIR and CARE
+
+Description:
 
 ```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+Collecting biodiversity data takes a lot of energy and resources. This makes biodiversity data not only valuable for the scientist who collected it, but also to support further research and to inform policy on conservation, natural resources, land use, agriculture and more[^2]
 ```
 
 Additionally, you may choose to set the following optional variables:
@@ -112,4 +112,5 @@ If you'd like to preview the theme locally (for example, in the process of propo
 ### Running tests
 
 The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
-[^1]this is footnote
+[^1]: this is a footnote
+[^2]: Biodiversity Data Journal 2023; Haase et al. 2018
