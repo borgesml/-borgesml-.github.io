@@ -6,17 +6,15 @@ This licence allows reusers to distribute, remix, adapt, and build upon the mate
 
 ![trialpic](Referenzobjekt 1.jpeg)
 
-## Usage
+## Authors
 
-To use the Architect theme:
+Marlen Fischer[^1], Juliane Röder, Johannes Signer, Daniel Tschink, Tanja Weibulat, Ortrun Brand
 
-1. Add the following to your site's `_config.yml`:
+#Philipps-Universität Marburg, Biegenstraße 36, 35032 Marburg, Germany
+#Georg-August-Universität Göttingen, Wilhelmsplatz 1, 37073 Göttingen, Germany
+#German Federation for Biological Data (GFBio e.V.), Mary-Somerville-Str. 2-4, 28359 Bremen, Germany
+#Bavarian Natural History Collections, Menzinger Str. 67, 80638, Munich, Germany
 
-    ```yml
-    remote_theme: pages-themes/architect@v0.2.0
-    plugins:
-    - jekyll-remote-theme # add this line to the plugins list if you already have one
-    ```
 
 2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
@@ -114,3 +112,4 @@ If you'd like to preview the theme locally (for example, in the process of propo
 ### Running tests
 
 The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+[^1]this is footnote
