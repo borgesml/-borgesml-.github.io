@@ -2,6 +2,6 @@
 title: "About me"
 ---
 
-## Header
+## About me
 
 I am X, Y and Z .
