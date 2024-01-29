@@ -1,8 +1,8 @@
-# The Architect theme
+# TRIAL WEBSITE
 
-[![.github/workflows/ci.yaml](https://github.com/pages-themes/architect/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/architect/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-architect.svg)](https://badge.fury.io/rb/jekyll-theme-architect)
 
-*Architect is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/architect), or even [use it today](#usage).*
+*This document is published under the [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
+This licence allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, as long as attribution is given to the creator. The licence allows for commercial use. 
 
 ![Thumbnail of Architect](thumbnail.png)
 
