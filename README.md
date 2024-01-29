@@ -4,7 +4,7 @@
 *This document is published under the [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
 This licence allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, as long as attribution is given to the creator. The licence allows for commercial use. 
 
-![Thumbnail of Architect](thumbnail.png)
+![Alt text](URL_of_the_image)
 
 ## Usage
 
