@@ -9,7 +9,7 @@ Information Information Information [trial link](https://scholar.google.com/) vi
 
 ## Table of Contents
 
-- [Chapter 1](#Chapter 1)
+- [Chapter 1](#Chapter-1)
 - [Getting Started](#getting-started)
 - [File Structure](#file-structure)
 - [Images](#images)
