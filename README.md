@@ -39,8 +39,12 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
      * Information 2.2
 
   ### Another question here
-  <details>
-<summary>This is a toggle list inside another one</summary>
+    1. Information 1
+  2. Information 2
+     * Information 2.1
+     * Information 2.2
+ </details>
+
   
 
 ## Getting Started 
