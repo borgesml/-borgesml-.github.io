@@ -3,9 +3,9 @@
 
 # WEBSITE TRIAL
 
-_`Last Updated: 12/1/2023`_ [`edit`](https://github.com/dandalpiaz/markdown-pages/edit/main/README.md)
+## here is where we add what this website is about
 
-Create a simple website that utilizes Markdown files for page content. No site generator necessary. Edit directly on GitHub! The pages and files in the [GitHub ![GitHub Logo](assets/user/github.png) repository](https://github.com/dandalpiaz/markdown-pages) are rendered on [this website](https://dandalpiaz.github.io/markdown-pages) via GitHub Pages. 
+Information Information Information [trial link](https://scholar.google.com/) via Google. 
 
 ## Table of Contents
 
