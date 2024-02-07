@@ -49,10 +49,10 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
 
 ## Chapter 2
 ### An attempt to create a table
-| Title 1      | Title 2 |
-| ----------- | ----------- |
-| Content Content 1     | Content Content 2      |
-| Content Content 3   | Content Content 4       |
+|        Title 1             |          Title 2        |
+| :---        |    :----:   |
+|      Content Content 1         |       Content Content 2           |
+|          Content Content 3          |        Content Content 4           |
 | Content Content 5   | Content Content 6       |
 
 Nice!
