@@ -1,5 +1,5 @@
 
-![trial logo](download.jpeg)
+![trial logo](Referenzobjekt 1.jpeg)
 
 # WEBSITE TRIAL
 
