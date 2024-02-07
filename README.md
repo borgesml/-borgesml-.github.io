@@ -10,8 +10,8 @@ Information Information Information [trial link](https://scholar.google.com/) vi
 ## Table of Contents
 
 - [Chapter 1](#Chapter-1)
-- [Getting Started](#getting-started)
-- [File Structure](#file-structure)
+- [Chapter 2](#Chapter-2)
+- [Chapter 3](#Chapter-3)
 - [Images](#images)
 - [Styles](#styles)
 - [Limitations](#limitations)
@@ -47,11 +47,11 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
 
   
 
-## Getting Started 
+## Chapter 2
 
 To set up a site, simply fork or copy the files from the [markdown-pages repository](https://github.com/dandalpiaz/markdown-pages) into your own repo, and then enable GitHub pages for your repository. Steps 2 and 3 in this [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart) show how this is done in the interface. Other steps can be ignored.
 
-## File Structure
+## Chapter 3
 
 ```
 markdown-pages/
