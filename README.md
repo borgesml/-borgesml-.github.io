@@ -9,7 +9,7 @@ Information Information Information [trial link](https://scholar.google.com/) vi
 
 ## Table of Contents
 
-- [About](#about)
+- [Chapter 1](#Chapter 1)
 - [Getting Started](#getting-started)
 - [File Structure](#file-structure)
 - [Images](#images)
@@ -17,7 +17,7 @@ Information Information Information [trial link](https://scholar.google.com/) vi
 - [Limitations](#limitations)
 - [Todo](#todo)
 
-## About
+## Chapter 1
 
 With a focus on simple, text-based content, this template aims to simplify the creation of a Markdown-based website. There are numerous static site generators (like Jekyll and Hugo) that can use Markdown files for content; however, they require additional backend setup and configuration. In this case, much of that work is done on the frontend instead. 
 
