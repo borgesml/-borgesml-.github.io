@@ -29,6 +29,20 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT 
 - **[Pico CSS](https://picocss.com/)** - to add (classless) default styles for the site
 - **[Highlight JS](https://highlightjs.org/)** - to add syntax highlighting for code blocks
 
+<details>
+  <summary>This is an example of a toggle list</summary>
+  
+  ### Question goes up there
+  1. Information 1
+  2. Information 2
+     * Information 2.1
+     * Information 2.2
+
+  ### Another question here
+  <details>
+<summary>This is a toggle list inside another one</summary>
+  
+
 ## Getting Started 
 
 To set up a site, simply fork or copy the files from the [markdown-pages repository](https://github.com/dandalpiaz/markdown-pages) into your own repo, and then enable GitHub pages for your repository. Steps 2 and 3 in this [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart) show how this is done in the interface. Other steps can be ignored.
