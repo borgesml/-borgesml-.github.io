@@ -1,147 +1,126 @@
-# TRIAL WEBSITE
 
+![markdown logo](assets/user/markdown.svg)
 
-*This document is published under the [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). 
-This licence allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, as long as attribution is given to the creator. The licence allows for commercial use. 
+# Markdown Pages - a simple template for Markdown-based sites on GitHub Pages (or other host)
 
-![trialpic](Referenzobjekt 1.jpeg)
+_`Last Updated: 12/1/2023`_ [`edit`](https://github.com/dandalpiaz/markdown-pages/edit/main/README.md)
 
-## Authors
+Create a simple website that utilizes Markdown files for page content. No site generator necessary. Edit directly on GitHub! The pages and files in the [GitHub ![GitHub Logo](assets/user/github.png) repository](https://github.com/dandalpiaz/markdown-pages) are rendered on [this website](https://dandalpiaz.github.io/markdown-pages) via GitHub Pages. 
 
-Marlen Fischer[^1], Juliane Röder, Johannes Signer, Daniel Tschink, Tanja Weibulat, Ortrun Brand
+## Table of Contents
 
-#Philipps-Universität Marburg, Biegenstraße 36, 35032 Marburg, Germany
-#Georg-August-Universität Göttingen, Wilhelmsplatz 1, 37073 Göttingen, Germany
-#German Federation for Biological Data (GFBio e.V.), Mary-Somerville-Str. 2-4, 28359 Bremen, Germany
-#Bavarian Natural History Collections, Menzinger Str. 67, 80638, Munich, Germany
+- [About](#about)
+- [Getting Started](#getting-started)
+- [File Structure](#file-structure)
+- [Images](#images)
+- [Styles](#styles)
+- [Limitations](#limitations)
+- [Todo](#todo)
 
+## About
 
-    ```
+With a focus on simple, text-based content, this template aims to simplify the creation of a Markdown-based website. There are numerous static site generators (like Jekyll and Hugo) that can use Markdown files for content; however, they require additional backend setup and configuration. In this case, much of that work is done on the frontend instead. 
 
-## 2. Basics in Research Data Management
+This template can be used anywhere that static files can be hosted - one convenient place to do so is GitHub Pages. Other than a platform/server that hosts files, the site will require no other backend components, and the frontend uses just three libraries:
 
-After completing this chapter, you will be able to...
-- ...explain the relevance of research data management for biodiversity data
-- ...name the four FAIR principles
-- ...contextualise how biodiversity research may raise ethical concerns related to indigenous data
+- **[Showdown JS](http://showdownjs.com/)** - for the conversion of Markdown to HTML
+- **[Pico CSS](https://picocss.com/)** - to add (classless) default styles for the site
+- **[Highlight JS](https://highlightjs.org/)** - to add syntax highlighting for code blocks
 
-### 2.1. Relevance of research data management: FAIR and CARE
+## Getting Started 
 
-Description:
+To set up a site, simply fork or copy the files from the [markdown-pages repository](https://github.com/dandalpiaz/markdown-pages) into your own repo, and then enable GitHub pages for your repository. Steps 2 and 3 in this [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart) show how this is done in the interface. Other steps can be ignored.
 
-<div class="content-box">
-  <style>
-    .content-box {
-        background-color: #f2f2f2;
-        border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 5px;
-    }
-</style>
-Collecting biodiversity data takes a lot of energy and resources. This makes biodiversity data not only valuable for the scientist who 
-    collected it, but also to support further research and to inform policy on conservation, natural resources, land use, agriculture and 
-    more[^2]
-</div>
+## File Structure
 
-
-
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
 ```
-### Trial
+markdown-pages/
+|---assets/
+|------user/
+|	   |---favicon.png
+|	   |---example.png
+|---pages/
+|	|---sample-page.md
+|	|---sample-page-2.md
+|---index.html
+|---README.md
+```
 
-const config = {
-  type: 'bar',
-  data: data,
-  options: {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Bar Chart'
-      }
-    }
-  },
-};
+### README.md
 
-### Stylesheet
+The `README.md` file will provide the content for the homepage of your site. Simply author the file using [Markdown syntax](https://www.markdownguide.org/basic-syntax/).
 
-If you'd like to add your own custom styles:
+### index.html
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+The `index.html` file does the magic of converting Markdown to HTML. It will also look for a heading level 1 (h1) on the current page and prepend it to the site title. You can add your site title by modifying this line in the header:
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+```
+&lt;title&gt;Markdown Pages&lt;/title&gt;
+```
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+There are other lines in the header that you may want to edit as well, such as the meta description and the favicon image name/location.
 
-### Layouts
 
-If you'd like to change the theme's HTML layout:
+### Pages
 
-1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/architect/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/architect/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/pages-themes/architect/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-3. Create a file called `/_layouts/default.html` in your site
-4. Paste the default layout content copied in the first step
-5. Customize the layout as you'd like
+Additional pages can be added to the `pages` directory, using Markdown files. To add a link to an additional page, for example, `sample-page.md`, the following link structure can be used: 
 
-### Customizing Google Analytics code
+```
+Check out the [sample page](?page=sample-page)
+```
 
-Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
+Check out the [sample page](?page=sample-page) (link will work on the rendered site, not github.com).
 
-### Overriding GitHub-generated URLs
+### Assets
 
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+Images and other files can be added to the `assets/user` directory and linked as needed. 
 
-1. Look at [the template source](https://github.com/pages-themes/architect/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+## Images
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+Images can be included with Markdown as they normally are:
 
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+```
+![markdown logo](assets/user/markdown.svg)
+```
 
-## Roadmap
+And image sizing configuration is available through the [parseImgDimensions](https://showdownjs.com/docs/available-options/#parseimgdimensions) option in Showdown JS:
 
-See the [open issues](https://github.com/pages-themes/architect/issues) for a list of proposed features (and known issues).
+```
+![bar](bar.jpg =100x*)    sets width to 100px and height to "auto"
+![foo](foo.jpg =100x80)   sets width to 100px and height to 80px
+![baz](baz.jpg =80%x5em)  sets width to 80% and height to 5em
+```
 
-## Project philosophy
+## Styles
 
-The Architect theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+### Dark/Light Mode
 
-## Contributing
+The site will include a dark/light mode toggle button by default. When adding images to a page, consider adding images that will contrast well against both a light and dark background.
 
-Interested in contributing to Architect? We'd love your help. Architect is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+### Syntax Highlighting
 
-### Previewing the theme locally
+Syntax highlighting will automatically be applied to code blocks, for example:
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+```
+def my_function():
+  fruits = ['orange', 'apple', 'pear', 'kiwi', 'banana']
+  for fruit in fruits:
+    if fruit == 'banana':
+        print(fruit)
 
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/architect`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+my_function()
+```
 
-### Running tests
+## Limitations
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
-[^1]: this is a footnote
-[^2]: Biodiversity Data Journal 2023; Haase et al. 2018
+- **Local Development** - since the site uses XMLHttpRequest to grab content, a local web server will be needed if you want to test things locally, e.g. `python -m http.server`. However, editing files directly on a server/GitHub is part of the convenience/fun.
+- **Limited element options** - if the element you're trying to use exists in Markdown, the converter should be able to render it as HTML, but this will exclude a lot of more advanced HTML elements.  
+- **No custom layouts** - Markdown used in this way is fairly linear, so you won't be able to do a columns and fancy layouts without extra work.
+
+## Todo
+
+- Find/create a classless a11y CSS framework?
+- Add a header/menu and footer section in `index.html` that can be populated from Markdown files?
+- Escape HTML in code blocks using JS, so that this doesn't have to be done in code blocks to render correctly
+- Implement more [Showdown JS options](https://github.com/showdownjs/showdown/wiki/Showdown-Options)
+- Move pages out of 'pages' directory so that GitHub and hosted site can find assets using the same relative paths?
